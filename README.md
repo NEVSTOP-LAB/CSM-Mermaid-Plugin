@@ -16,10 +16,12 @@
 
 以 [CSM-Continuous-Meausrement-and-Logging](https://github.com/NEVSTOP-LAB/CSM-Continuous-Meausrement-and-Logging) 运行状态(Status)和接口(API)之间的订阅关系为例：
 
-![状态(Status)和接口(API)之间的订阅关系.table](./.doc/1.png)
+![![](./.doc/1.png)](https://github.com/NEVSTOP-LAB/CSM-Mermaid-Plugin/assets/8196752/adef9308-90ff-469a-8fa1-e3bf8b026bc8)
 
-![状态(Status)和接口(API)之间的订阅关系.mermaid](./.doc/2.png)
+![状态(Status)和接口(API)之间的订阅关系.mermaid](https://github.com/NEVSTOP-LAB/CSM-Mermaid-Plugin/assets/8196752/74159b7f-64bd-4f6c-aaa5-5a64dce1b96e)
+
 
 ### CSM 的接口信息
 
-![image](https://github.com/NEVSTOP-LAB/CSM-Mermaid-Plugin/assets/8196752/f9195c8a-5ca0-4b80-9c68-6400498b6b08)
+![image](https://github.com/NEVSTOP-LAB/CSM-Mermaid-Plugin/assets/8196752/c6c7f48e-39bd-48f0-b372-fe0a4bf33b47)
+
