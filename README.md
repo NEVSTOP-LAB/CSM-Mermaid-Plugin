@@ -10,6 +10,7 @@
 3. [ ] CSM 模块间的调用关系图
 4. [ ] CSM 模块间的状态跳转逻辑图
 5. [ ] mermaid界面显示提供缩放、移动位置等操作
+6. [x] CSM 模块接口信息
 
 ### 状态(Status)和接口(API)之间的订阅关系
 
@@ -18,3 +19,7 @@
 ![状态(Status)和接口(API)之间的订阅关系.table](./.doc/1.png)
 
 ![状态(Status)和接口(API)之间的订阅关系.mermaid](./.doc/2.png)
+
+### CSM 的接口信息
+
+![image](https://github.com/NEVSTOP-LAB/CSM-Mermaid-Plugin/assets/8196752/f9195c8a-5ca0-4b80-9c68-6400498b6b08)
