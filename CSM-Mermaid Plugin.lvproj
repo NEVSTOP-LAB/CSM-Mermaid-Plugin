@@ -33,7 +33,6 @@
 				<Item Name="test vim.vi" Type="VI" URL="../src/CSM-Helper/_test/test vim.vi"/>
 				<Item Name="test_csm_helper.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper.vi"/>
 				<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper2.vi"/>
-				<Item Name="test_csm_interface.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface.vi"/>
 				<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface_descp.vi"/>
 				<Item Name="test_polymophic.vi" Type="VI" URL="../src/CSM-Helper/_test/test_polymophic.vi"/>
 			</Item>
@@ -44,7 +43,6 @@
 		</Item>
 		<Item Name="CSM - Mermaid - DebugTool.vi" Type="VI" URL="../src/CSM - Mermaid - DebugTool.vi"/>
 		<Item Name="CSM Mermaid Plugin.vipb" Type="Document" URL="../CSM Mermaid Plugin.vipb"/>
-		<Item Name="CSM Example - Caller is a CSM.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/NEVSTOP/Communicable State Machine(CSM)/2. Caller is CSM Scenario/CSM Example - Caller is a CSM.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WebView2 Control.xctl" Type="XControl" URL="/&lt;vilib&gt;/sklein/WebView2/Webview2 Control/WebView2 Control.xctl"/>
@@ -167,12 +165,6 @@
 				<Item Name="Data Changed - First Call Included_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Comparison/Data Changed - First Call Included_nevstop.vim"/>
 				<Item Name="csm-tool-support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_tool/_Support/csm-tool-support.lvlib"/>
 				<Item Name="API String Arguments Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/API-String-Arugments-Support/API String Arguments Support.lvlib"/>
-				<Item Name="Remove Duplicates from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Remove Duplicates from 1D Array_nevstop.vim"/>
-				<Item Name="Search 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Search 1D Array_nevstop.vim"/>
-				<Item Name="Delete Elements from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Delete Elements from 1D Array_nevstop.vim"/>
-				<Item Name="Filter 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Filter 1D Array_nevstop.vim"/>
-				<Item Name="Valid Refnum_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Application/Valid Refnum_nevstop.vim"/>
-				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
 				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -181,7 +173,6 @@
 			<Item Name="System.Web.Extensions" Type="Document" URL="System.Web.Extensions">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CSM Reuse Module.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/NEVSTOP/Communicable State Machine(CSM)/1. Create a reuse Module/CSM Reuse Module.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
