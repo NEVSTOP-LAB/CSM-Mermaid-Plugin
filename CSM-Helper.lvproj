@@ -11,11 +11,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_test" Type="Folder">
-			<Item Name="abc.vim" Type="VI" URL="../src/CSM-Helper/_test/abc.vim"/>
-			<Item Name="test vim.vi" Type="VI" URL="../src/CSM-Helper/_test/test vim.vi"/>
 			<Item Name="test_csm_helper.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper.vi"/>
 			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper2.vi"/>
-			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface_descp.vi"/>
 			<Item Name="test_polymophic.vi" Type="VI" URL="../src/CSM-Helper/_test/test_polymophic.vi"/>
 		</Item>
 		<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
@@ -23,7 +20,6 @@
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="API String Arguments Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/API-String-Arugments-Support/API String Arguments Support.lvlib"/>
 				<Item Name="Communicable State Machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/Communicable State Machine.lvlib"/>
-				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -51,7 +47,6 @@
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 				<Item Name="Get Local UTC Offset.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/Get Local UTC Offset.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
@@ -97,7 +92,6 @@
 			<Item Name="Generate CSM Class API Arguments Type in Short.vi" Type="VI" URL="../src/_support/Generate CSM Class API Arguments Type in Short.vi"/>
 			<Item Name="Generate CSM Class API Arguments.vi" Type="VI" URL="../src/_support/Generate CSM Class API Arguments.vi"/>
 			<Item Name="Generate CSM Class mermaid.vi" Type="VI" URL="../src/_support/Generate CSM Class mermaid.vi"/>
-			<Item Name="Logging.lvlib" Type="Library" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/NEVSTOP/Communicable State Machine(CSM)/CSM Continuous Meausrement and Logging Example/Logging/Logging.lvlib"/>
 			<Item Name="Make String Mermaid Safe.vi" Type="VI" URL="../src/_support/Make String Mermaid Safe.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
