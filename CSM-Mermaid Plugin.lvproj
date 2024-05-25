@@ -19,11 +19,32 @@
 		<Item Name="_test" Type="Folder" URL="../src/_test">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="CSM-Helper" Type="Folder" URL="../CSM-Helper">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="CSM-Helper" Type="Folder">
+			<Item Name="_support" Type="Folder">
+				<Item Name="Creation" Type="Folder"/>
+				<Item Name="Refs" Type="Folder">
+					<Item Name="Filter" Type="Folder">
+						<Item Name="Terms" Type="Folder"/>
+					</Item>
+				</Item>
+			</Item>
+			<Item Name="_test" Type="Folder">
+				<Item Name="abc.vim" Type="VI" URL="../src/CSM-Helper/_test/abc.vim"/>
+				<Item Name="test vim.vi" Type="VI" URL="../src/CSM-Helper/_test/test vim.vi"/>
+				<Item Name="test_csm_helper.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper.vi"/>
+				<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper2.vi"/>
+				<Item Name="test_csm_interface.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface.vi"/>
+				<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface_descp.vi"/>
+				<Item Name="test_polymophic.vi" Type="VI" URL="../src/CSM-Helper/_test/test_polymophic.vi"/>
+			</Item>
+			<Item Name="API" Type="Folder"/>
+			<Item Name="Properties" Type="Folder"/>
+			<Item Name="Typedef" Type="Folder"/>
+			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name="CSM - Mermaid - DebugTool.vi" Type="VI" URL="../src/CSM - Mermaid - DebugTool.vi"/>
 		<Item Name="CSM Mermaid Plugin.vipb" Type="Document" URL="../CSM Mermaid Plugin.vipb"/>
+		<Item Name="CSM Example - Caller is a CSM.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/NEVSTOP/Communicable State Machine(CSM)/2. Caller is CSM Scenario/CSM Example - Caller is a CSM.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WebView2 Control.xctl" Type="XControl" URL="/&lt;vilib&gt;/sklein/WebView2/Webview2 Control/WebView2 Control.xctl"/>
@@ -86,15 +107,6 @@
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
-				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
-				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
-				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
-				<Item Name="TRef Get All SubVI Names.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Get All SubVI Names.vi"/>
-				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
-				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
-				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi"/>
-				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="Timestamp to ISO8601 UTC DateTime.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/formatter.iso8601/Timestamp to ISO8601 UTC DateTime.vi"/>
 				<Item Name="Get Local UTC Offset.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/Get Local UTC Offset.vi"/>
 				<Item Name="UTC Offsets -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/UTC Offsets -- enum.ctl"/>
@@ -119,6 +131,15 @@
 				<Item Name="Epoch.GPS.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/epoch.GPS/Epoch.GPS.lvclass"/>
 				<Item Name="GregorianCal_MonthLengths.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLengths.vi"/>
 				<Item Name="UTC Offset to Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/UTC Offset to Seconds.vi"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
+				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
+				<Item Name="TRef Get All SubVI Names.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Get All SubVI Names.vi"/>
+				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
+				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
+				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi"/>
+				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Communicable State Machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/Communicable State Machine.lvlib"/>
@@ -143,16 +164,16 @@
 				<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
 				<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
 				<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
-				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
-				<Item Name="Search 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Search 1D Array_nevstop.vim"/>
-				<Item Name="Remove Duplicates from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Remove Duplicates from 1D Array_nevstop.vim"/>
-				<Item Name="Delete Elements from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Delete Elements from 1D Array_nevstop.vim"/>
-				<Item Name="Filter 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Filter 1D Array_nevstop.vim"/>
-				<Item Name="Valid Refnum_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Application/Valid Refnum_nevstop.vim"/>
-				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 				<Item Name="Data Changed - First Call Included_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Comparison/Data Changed - First Call Included_nevstop.vim"/>
 				<Item Name="csm-tool-support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_tool/_Support/csm-tool-support.lvlib"/>
 				<Item Name="API String Arguments Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/API-String-Arugments-Support/API String Arguments Support.lvlib"/>
+				<Item Name="Remove Duplicates from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Remove Duplicates from 1D Array_nevstop.vim"/>
+				<Item Name="Search 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Search 1D Array_nevstop.vim"/>
+				<Item Name="Delete Elements from 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Delete Elements from 1D Array_nevstop.vim"/>
+				<Item Name="Filter 1D Array_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Array/Filter 1D Array_nevstop.vim"/>
+				<Item Name="Valid Refnum_nevstop.vim" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/Application/Valid Refnum_nevstop.vim"/>
+				<Item Name="String to 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/String to 1D Array__ogtk.vi"/>
+				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -160,6 +181,7 @@
 			<Item Name="System.Web.Extensions" Type="Document" URL="System.Web.Extensions">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="CSM Reuse Module.vi" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2020/examples/NEVSTOP/Communicable State Machine(CSM)/1. Create a reuse Module/CSM Reuse Module.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
