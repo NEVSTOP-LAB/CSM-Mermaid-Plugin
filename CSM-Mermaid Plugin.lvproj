@@ -13,6 +13,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="_test" Type="Folder">
+			<Item Name="test_csm_helper.vi" Type="VI" URL="../src/_test/test_csm_helper.vi"/>
+			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/_test/test_csm_helper2.vi"/>
+			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/_test/test_csm_interface_descp.vi"/>
+			<Item Name="test_polymophic.vi" Type="VI" URL="../src/_test/test_polymophic.vi"/>
+		</Item>
 		<Item Name="_support" Type="Folder" URL="../src/_support">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -24,12 +30,6 @@
 						<Item Name="Terms" Type="Folder"/>
 					</Item>
 				</Item>
-			</Item>
-			<Item Name="_test" Type="Folder">
-				<Item Name="test_csm_helper.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper.vi"/>
-				<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper2.vi"/>
-				<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface_descp.vi"/>
-				<Item Name="test_polymophic.vi" Type="VI" URL="../src/CSM-Helper/_test/test_polymophic.vi"/>
 			</Item>
 			<Item Name="API" Type="Folder"/>
 			<Item Name="Properties" Type="Folder"/>
