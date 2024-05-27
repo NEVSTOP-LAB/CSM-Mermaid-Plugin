@@ -23,17 +23,6 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
-			<Item Name="_support" Type="Folder">
-				<Item Name="Creation" Type="Folder"/>
-				<Item Name="Refs" Type="Folder">
-					<Item Name="Filter" Type="Folder">
-						<Item Name="Terms" Type="Folder"/>
-					</Item>
-				</Item>
-			</Item>
-			<Item Name="API" Type="Folder"/>
-			<Item Name="Properties" Type="Folder"/>
-			<Item Name="Typedef" Type="Folder"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name=".doc" Type="Folder" URL="../.doc">
