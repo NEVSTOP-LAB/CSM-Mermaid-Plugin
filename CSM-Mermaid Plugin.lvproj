@@ -13,27 +13,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="_test" Type="Folder">
+			<Item Name="test_csm_helper.vi" Type="VI" URL="../src/_test/test_csm_helper.vi"/>
+			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/_test/test_csm_helper2.vi"/>
+			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/_test/test_csm_interface_descp.vi"/>
+			<Item Name="test_polymophic.vi" Type="VI" URL="../src/_test/test_polymophic.vi"/>
+		</Item>
 		<Item Name="_support" Type="Folder" URL="../src/_support">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
-			<Item Name="_support" Type="Folder">
-				<Item Name="Creation" Type="Folder"/>
-				<Item Name="Refs" Type="Folder">
-					<Item Name="Filter" Type="Folder">
-						<Item Name="Terms" Type="Folder"/>
-					</Item>
-				</Item>
-			</Item>
-			<Item Name="_test" Type="Folder">
-				<Item Name="test_csm_helper.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper.vi"/>
-				<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_helper2.vi"/>
-				<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/CSM-Helper/_test/test_csm_interface_descp.vi"/>
-				<Item Name="test_polymophic.vi" Type="VI" URL="../src/CSM-Helper/_test/test_polymophic.vi"/>
-			</Item>
-			<Item Name="API" Type="Folder"/>
-			<Item Name="Properties" Type="Folder"/>
-			<Item Name="Typedef" Type="Folder"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name=".doc" Type="Folder" URL="../.doc">
@@ -209,6 +198,7 @@
 				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 				<Item Name="LabVIEW-Config.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/LabVIEW-Config/LabVIEW-Config.lvlib"/>
 				<Item Name="INI-Static-Variable-Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/INI-Static-Variable-Support.lvlib"/>
+				<Item Name="CSM File Logger.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM File Logger.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
