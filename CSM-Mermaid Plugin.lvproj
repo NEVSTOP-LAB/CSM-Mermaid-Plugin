@@ -24,6 +24,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
+			<Item Name="Relationship Check.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Relationship Check.vi"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name=".doc" Type="Folder" URL="../.doc">
