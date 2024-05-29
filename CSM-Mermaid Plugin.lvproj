@@ -18,6 +18,7 @@
 			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/_test/test_csm_helper2.vi"/>
 			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/_test/test_csm_interface_descp.vi"/>
 			<Item Name="test_polymophic.vi" Type="VI" URL="../src/_test/test_polymophic.vi"/>
+			<Item Name="test owner.vi" Type="VI" URL="../src/_test/test owner.vi"/>
 		</Item>
 		<Item Name="_support" Type="Folder" URL="../src/_support">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -170,6 +171,8 @@
 				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
 				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
+				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi"/>
+				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Communicable State Machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/Communicable State Machine.lvlib"/>
