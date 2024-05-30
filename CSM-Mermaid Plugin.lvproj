@@ -15,7 +15,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_test" Type="Folder">
 			<Item Name="test_csm_helper.vi" Type="VI" URL="../src/_test/test_csm_helper.vi"/>
-			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/_test/test_csm_helper2.vi"/>
+			<Item Name="test caller.vi" Type="VI" URL="../src/_test/test caller.vi"/>
 			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/_test/test_csm_interface_descp.vi"/>
 			<Item Name="test_polymophic.vi" Type="VI" URL="../src/_test/test_polymophic.vi"/>
 			<Item Name="test owner.vi" Type="VI" URL="../src/_test/test owner.vi"/>
@@ -24,6 +24,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
+			<Item Name="Relationship Check.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Relationship Check.vi"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name=".doc" Type="Folder" URL="../.doc">
