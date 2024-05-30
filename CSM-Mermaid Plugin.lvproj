@@ -15,14 +15,16 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_test" Type="Folder">
 			<Item Name="test_csm_helper.vi" Type="VI" URL="../src/_test/test_csm_helper.vi"/>
-			<Item Name="test_csm_helper2.vi" Type="VI" URL="../src/_test/test_csm_helper2.vi"/>
+			<Item Name="test caller.vi" Type="VI" URL="../src/_test/test caller.vi"/>
 			<Item Name="test_csm_interface_descp.vi" Type="VI" URL="../src/_test/test_csm_interface_descp.vi"/>
 			<Item Name="test_polymophic.vi" Type="VI" URL="../src/_test/test_polymophic.vi"/>
+			<Item Name="test owner.vi" Type="VI" URL="../src/_test/test owner.vi"/>
 		</Item>
 		<Item Name="_support" Type="Folder" URL="../src/_support">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
+			<Item Name="Relationship Check.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Relationship Check.vi"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
 		<Item Name=".doc" Type="Folder" URL="../.doc">
@@ -170,6 +172,8 @@
 				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
 				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
+				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi"/>
+				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Communicable State Machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/Communicable State Machine.lvlib"/>
@@ -198,6 +202,8 @@
 				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 				<Item Name="LabVIEW-Config.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/LabVIEW-Config/LabVIEW-Config.lvlib"/>
 				<Item Name="INI-Static-Variable-Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/INI-Static-Variable-Support.lvlib"/>
+				<Item Name="Concatenate Strings If not Empty_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/String/Concatenate Strings If not Empty_nevstop.vi"/>
+				<Item Name="INI-FGV2.vi" Type="VI" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/_Support/INI-FGV2.vi"/>
 				<Item Name="CSM File Logger.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM File Logger.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
