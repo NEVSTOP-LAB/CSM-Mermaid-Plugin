@@ -24,6 +24,8 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="CSM-Helper" Type="Folder">
+			<Item Name="Get ParentRef Until Type Matched.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Get ParentRef Until Type Matched.vi"/>
+			<Item Name="Is in JKISM or CSM.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Is in JKISM or CSM.vi"/>
 			<Item Name="Relationship Check.vi" Type="VI" URL="../src/CSM-Helper/_support/Refs/Relationship Check.vi"/>
 			<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="../src/CSM-Helper/CSM-Helper.lvclass"/>
 		</Item>
@@ -202,9 +204,6 @@
 				<Item Name="CSM MassData Parameter Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/MassData-Parameter/CSM MassData Parameter Support.lvlib"/>
 				<Item Name="LabVIEW-Config.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/LabVIEW-Config/LabVIEW-Config.lvlib"/>
 				<Item Name="INI-Static-Variable-Support.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/INI-Static-Variable-Support.lvlib"/>
-				<Item Name="Concatenate Strings If not Empty_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/String/Concatenate Strings If not Empty_nevstop.vi"/>
-				<Item Name="INI-FGV2.vi" Type="VI" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/INI-Static-Variable-Support/_Support/INI-FGV2.vi"/>
-				<Item Name="CSM File Logger.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM File Logger.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
