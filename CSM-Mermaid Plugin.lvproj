@@ -33,7 +33,6 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WebView2 Control.xctl" Type="XControl" URL="/&lt;vilib&gt;/sklein/WebView2/Webview2 Control/WebView2 Control.xctl"/>
 				<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/Microsoft.Web.WebView2.Core.dll"/>
-				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
@@ -87,7 +86,7 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
-				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
+				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Timestamp to ISO8601 UTC DateTime.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/formatter.iso8601/Timestamp to ISO8601 UTC DateTime.vi"/>
 				<Item Name="Get Local UTC Offset.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/Get Local UTC Offset.vi"/>
 				<Item Name="UTC Offsets -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/UTC Offsets -- enum.ctl"/>
@@ -141,6 +140,12 @@
 				<Item Name="Create Directory if Non-Existant_nevstop.vi" Type="VI" URL="/&lt;userlib&gt;/NEVSTOP-Programming-Palette/File/Create Directory if Non-Existant_nevstop.vi"/>
 				<Item Name="_csm_user_lib_dir.vi" Type="VI" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_scripts/_csm_user_lib_dir.vi"/>
 				<Item Name="CSM-Helper.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/CSM-Helper.lvclass"/>
+				<Item Name="CSM-Helper Utility.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/CSM-Helper Utility.lvlib"/>
+				<Item Name="csmHelper-Relationship.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/_Support/Relationship/csmHelper-Relationship.lvlib"/>
+				<Item Name="csmHelper-Terminals.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/_Support/Terminals/csmHelper-Terminals.lvlib"/>
+				<Item Name="csmHelper-CaseStructure.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/_Support/CaseStructure/csmHelper-CaseStructure.lvlib"/>
+				<Item Name="csmHelper-Diagram.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/_Support/Diagram/csmHelper-Diagram.lvlib"/>
+				<Item Name="csmHelper-PairedTunnels.lvlib" Type="Library" URL="/&lt;userlib&gt;/_NEVSTOP/Communicable State Machine(CSM)/_csmHelper/Utility/_Support/PairedTunnels/csmHelper-PairedTunnels.lvlib"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
