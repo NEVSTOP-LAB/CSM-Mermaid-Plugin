@@ -16,4 +16,5 @@
 	<Item Name="Generate CSM Class mermaid(CSMH).vi" Type="VI" URL="../Generate CSM Class mermaid(CSMH).vi"/>
 	<Item Name="Generate Status-API Mapping mermaid.vi" Type="VI" URL="../Generate Status-API Mapping mermaid.vi"/>
 	<Item Name="Make String Mermaid Safe.vi" Type="VI" URL="../Make String Mermaid Safe.vi"/>
+	<Item Name="Query VIRef with Error Cache.vi" Type="VI" URL="../Query VIRef with Error Cache.vi"/>
 </Library>
