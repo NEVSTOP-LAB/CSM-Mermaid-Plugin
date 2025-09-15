@@ -1,14 +1,74 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      .mermaid-container {
+        overflow: auto;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      .mermaid {
+        transform-origin: top left;
+        transition: transform 0.1s ease;
+      }
+    </style>
   </head>
   <body>
 
-    <pre class="mermaid">
+    <div class="mermaid-container">
+      <pre class="mermaid">
 %s
-    </pre>
+      </pre>
+    </div>
 
     <script src="js/mermaid.min.js"></script>
+    <script>
+      // 初始化缩放因子
+      let scale = 1;
+      const scaleStep = 0.1;
+      const container = document.querySelector('.mermaid-container');
+      const mermaidElement = document.querySelector('.mermaid');
+      
+      // 设置 mermaid 配置
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default'
+      });
+      
+      // 添加鼠标滚轮缩放事件
+      container.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        
+        // 计算新的缩放因子
+        if (e.deltaY < 0) {
+          // 向上滚动，放大
+          scale += scaleStep;
+        } else {
+          // 向下滚动，缩小
+          scale = Math.max(0.1, scale - scaleStep); // 最小缩放到 0.1
+        }
+        
+        // 应用缩放
+        mermaidElement.style.transform = `scale(${scale})`;
+      });
+      
+      // 双击重置缩放
+      container.addEventListener('dblclick', function() {
+        scale = 1;
+        mermaidElement.style.transform = `scale(${scale})`;
+      });
+      
+      // 等待 mermaid 渲染完成后再应用缩放
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          // 确保 mermaid 已经渲染完成
+          if (mermaidElement) {
+            mermaidElement.style.transform = `scale(${scale})`;
+          }
+        }, 100);
+      });
+    </script>
 
   </body>
 </html>
