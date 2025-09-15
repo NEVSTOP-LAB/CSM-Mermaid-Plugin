@@ -3,16 +3,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
       .mermaid-container {
-        overflow: auto;
-        width: 100%;
-        height: 100vh;
+        overflow: visible;
+        width: max-content;
         position: relative;
+        margin: 60px;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        height: 100%;
       }
       .mermaid {
         transform-origin: top left;
         transition: transform 0.1s ease;
       }
-      .scale-indicator {
+      
+      .operation-tips {
         display: block;
         background-color: rgba(255, 255, 255, 0.9);
         border: 1px solid #ccc;
@@ -22,12 +29,17 @@
         font-size: 14px;
         margin-bottom: 10px;
         width: fit-content;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
       }
+
     </style>
   </head>
   <body>
 
-    <div class="scale-indicator" id="scaleIndicator">缩放: 100%</div>
+    <div class="operation-tips">操作提示: 滚轮缩放图表，双击重置缩放</div>
     <div class="mermaid-container">
       <pre class="mermaid">
 %s
@@ -41,13 +53,6 @@
       const scaleStep = 0.1;
       const container = document.querySelector('.mermaid-container');
       const mermaidElement = document.querySelector('.mermaid');
-      const scaleIndicator = document.getElementById('scaleIndicator');
-      
-      // 更新缩放比例显示
-      function updateScaleIndicator() {
-        const percentage = Math.round(scale * 100);
-        scaleIndicator.textContent = `缩放: ${percentage}%`;
-      }
       
       // 设置 mermaid 配置
       mermaid.initialize({
@@ -55,7 +60,7 @@
         theme: 'default'
       });
       
-      // 添加鼠标滚轮缩放事件
+      // 添加鼠标滚轮缩放事件（绑定到mermaid容器）
       container.addEventListener('wheel', function(e) {
         e.preventDefault();
         
@@ -70,15 +75,12 @@
         
         // 应用缩放
         mermaidElement.style.transform = `scale(${scale})`;
-        updateScaleIndicator();
-
       });
       
       // 双击重置缩放
       container.addEventListener('dblclick', function() {
         scale = 1;
-        mermaidElement.style.transform = `scale(${scale})`;
-        updateScaleIndicator();
+        mermaidElement.style.transform = 'scale(1)';
       });
       
       // 等待 mermaid 渲染完成后再应用缩放
