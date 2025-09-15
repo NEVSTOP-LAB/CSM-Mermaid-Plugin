@@ -12,10 +12,22 @@
         transform-origin: top left;
         transition: transform 0.1s ease;
       }
+      .scale-indicator {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin-bottom: 10px;
+        width: fit-content;
+      }
     </style>
   </head>
   <body>
 
+    <div class="scale-indicator" id="scaleIndicator">缩放: 100%</div>
     <div class="mermaid-container">
       <pre class="mermaid">
 %s
@@ -29,6 +41,13 @@
       const scaleStep = 0.1;
       const container = document.querySelector('.mermaid-container');
       const mermaidElement = document.querySelector('.mermaid');
+      const scaleIndicator = document.getElementById('scaleIndicator');
+      
+      // 更新缩放比例显示
+      function updateScaleIndicator() {
+        const percentage = Math.round(scale * 100);
+        scaleIndicator.textContent = `缩放: ${percentage}%`;
+      }
       
       // 设置 mermaid 配置
       mermaid.initialize({
@@ -51,12 +70,15 @@
         
         // 应用缩放
         mermaidElement.style.transform = `scale(${scale})`;
+        updateScaleIndicator();
+
       });
       
       // 双击重置缩放
       container.addEventListener('dblclick', function() {
         scale = 1;
         mermaidElement.style.transform = `scale(${scale})`;
+        updateScaleIndicator();
       });
       
       // 等待 mermaid 渲染完成后再应用缩放
