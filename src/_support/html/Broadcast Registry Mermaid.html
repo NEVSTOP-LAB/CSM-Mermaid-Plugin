@@ -18,7 +18,7 @@
         transform-origin: top left;
         transition: transform 0.1s ease;
       }
-      
+
       .operation-tips {
         display: block;
         background-color: rgba(255, 255, 255, 0.9);
@@ -39,7 +39,7 @@
   </head>
   <body>
 
-    <div class="operation-tips">操作提示: 滚轮缩放图表，双击重置缩放</div>
+    <div class="operation-tips" id="operation-tips"></div>
     <div class="mermaid-container">
       <pre class="mermaid">
 %s
@@ -48,22 +48,38 @@
 
     <script src="js/mermaid.min.js"></script>
     <script>
+      // 根据浏览器语言设置提示文本
+      function setTipsByBrowserLanguage() {
+        const tipsElement = document.getElementById('operation-tips');
+        const browserLanguage = navigator.language || navigator.userLanguage;
+
+        // 检测是否为中文
+        if (browserLanguage.includes('zh')) {
+          tipsElement.textContent = '操作提示: 滚轮缩放图表，双击重置缩放';
+        } else {
+          tipsElement.textContent = 'Operation Tips: Scroll to zoom chart, double click to reset zoom';
+        }
+      }
+
+      // 页面加载时设置提示文本
+      document.addEventListener('DOMContentLoaded', setTipsByBrowserLanguage);
+
       // 初始化缩放因子
       let scale = 1;
       const scaleStep = 0.1;
       const container = document.querySelector('.mermaid-container');
       const mermaidElement = document.querySelector('.mermaid');
-      
+
       // 设置 mermaid 配置
       mermaid.initialize({
         startOnLoad: true,
         theme: 'default'
       });
-      
+
       // 添加鼠标滚轮缩放事件（绑定到mermaid容器）
       container.addEventListener('wheel', function(e) {
         e.preventDefault();
-        
+
         // 计算新的缩放因子
         if (e.deltaY < 0) {
           // 向上滚动，放大
@@ -72,17 +88,17 @@
           // 向下滚动，缩小
           scale = Math.max(0.1, scale - scaleStep); // 最小缩放到 0.1
         }
-        
+
         // 应用缩放
         mermaidElement.style.transform = `scale(${scale})`;
       });
-      
+
       // 双击重置缩放
       container.addEventListener('dblclick', function() {
         scale = 1;
         mermaidElement.style.transform = 'scale(1)';
       });
-      
+
       // 等待 mermaid 渲染完成后再应用缩放
       document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
