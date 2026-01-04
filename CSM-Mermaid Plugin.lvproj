@@ -102,11 +102,13 @@
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="WebView2 XControl.lvlib" Type="Library" URL="/&lt;vilib&gt;/sklein/WebView2 XControl/WebView2 XControl/WebView2 XControl.lvlib"/>
 				<Item Name="WebView2.lvlib" Type="Library" URL="/&lt;vilib&gt;/sklein/WebView2/Webview2 Lib/WebView2.lvlib"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
 				<Item Name=".NET Object to Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/.NET Object to Variant.vi"/>
+				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="/&lt;vilib&gt;/sklein/_WebView2 XControl_internal_deps/Microsoft.Web.WebView2.Core.dll"/>
 				<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="/&lt;vilib&gt;/sklein/_WebView2 XControl_internal_deps/Microsoft.Web.WebView2.WinForms.dll"/>
 				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
