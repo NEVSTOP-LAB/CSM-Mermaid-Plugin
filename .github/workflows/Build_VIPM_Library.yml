@@ -40,6 +40,7 @@ jobs:
           LabVIEW_Version: 2020
           # Package could be PackageName/PacakgeWithVersion/vipFilePath
           Package: "WebView2"
+          Package1: "WebView2 XControl"
 
       - uses: NEVSTOP-LAB/InstallNevstopPackage@main
         with:
