@@ -28,8 +28,9 @@ jobs:
         uses: NEVSTOP-LAB/vipm-InstallPackage@main
         with:
           LabVIEW_Version: 2020
-          # Package could be PackageName/PacakgeWithVersion/vipFilePath
+          # Package could be PackageName/PackageWithVersion/vipFilePath
           Package: "WebView2"
+          Package1: "WebView2 XControl"
 
       - uses: NEVSTOP-LAB/InstallNevstopPackage@main
         with:
