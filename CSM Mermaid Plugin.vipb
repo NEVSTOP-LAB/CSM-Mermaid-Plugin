@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-05-11 22:13:02" Modified_Date="2026-01-04 10:39:37" Creator="yaoli" Comments="" ID="806b6834423077d35ea227f03b8a7784">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-05-11 22:13:02" Modified_Date="2026-01-26 15:51:14" Creator="yaoli" Comments="" ID="885998f4116465074a1d39dca79965a3">
   <Library_General_Settings>
     <Package_File_Name>NEVSTOP_lib_CSM_Mermaid_Plugin</Package_File_Name>
     <Library_Version>2025.12.0.11</Library_Version>
@@ -17,10 +17,10 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2026.1.3.234539</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_csm_api_string_arguments_support &gt;=2026.1.3.171645</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_csm_ini_static_variable_support &gt;=2026.1.3.171852</Additional_External_Dependencies>
-      <Additional_External_Dependencies>nevstop_lib_csm_massdata_parameter_support &gt;=2026.1.3.172206</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_communicable_state_machine &gt;=2026.1.26.120535</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_csm_api_string_arguments_support &gt;=2026.1.26.124351</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_csm_ini_static_variable_support &gt;=2026.1.26.141741</Additional_External_Dependencies>
+      <Additional_External_Dependencies>nevstop_lib_csm_massdata_parameter_support &gt;=2026.1.26.123331</Additional_External_Dependencies>
       <Additional_External_Dependencies>sklein_lib_webview2 &gt;=2.1.0.20</Additional_External_Dependencies>
       <Additional_External_Dependencies>sklein_lib_webview2_xcontrol &gt;=2.1.0.6</Additional_External_Dependencies>
     </Package_Dependencies>
