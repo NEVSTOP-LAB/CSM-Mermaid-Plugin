@@ -69,6 +69,8 @@
       // 初始化缩放因子
       let scale = 1;
       const scaleStep = 0.1;
+      const scaleMax = 5;
+      const scaleMin = 0.1;
       const container = document.querySelector('.mermaid-container');
       const mermaidElement = document.querySelector('.mermaid');
 
@@ -85,10 +87,10 @@
         // 计算新的缩放因子
         if (e.deltaY < 0) {
           // 向上滚动，放大
-          scale = Math.round((scale + scaleStep) * 10) / 10;
+          scale = Math.round(Math.min(scaleMax, scale + scaleStep) * 10) / 10; // 最大缩放到 scaleMax
         } else {
           // 向下滚动，缩小
-          scale = Math.round(Math.max(0.1, scale - scaleStep) * 10) / 10; // 最小缩放到 0.1
+          scale = Math.round(Math.max(scaleMin, scale - scaleStep) * 10) / 10; // 最小缩放到 scaleMin
         }
 
         // 应用缩放
