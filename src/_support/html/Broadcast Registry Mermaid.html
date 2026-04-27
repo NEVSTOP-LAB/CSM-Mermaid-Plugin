@@ -93,7 +93,7 @@
 
         // 应用缩放
         mermaidElement.style.transform = `scale(${scale})`;
-      });
+      }, { passive: false });
 
       // 双击重置缩放
       container.addEventListener('dblclick', function() {
