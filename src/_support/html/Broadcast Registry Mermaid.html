@@ -102,16 +102,6 @@
         scale = 1;
         mermaidElement.style.transform = 'scale(1)';
       });
-
-      // 等待 mermaid 渲染完成后再应用缩放
-      document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-          // 确保 mermaid 已经渲染完成
-          if (mermaidElement) {
-            mermaidElement.style.transform = `scale(${scale})`;
-          }
-        }, 100);
-      });
     </script>
 
   </body>
