@@ -1,4 +1,6 @@
 # Merged LabVIEW CI workflow
+# Keep the legacy workflow file path stable so GitHub Actions reuses the same workflow object
+# instead of creating a second workflow entry after a file rename.
 # Combines Build_VIPM_Library.yml and Check_Broken_VIs.yml into one pipeline:
 #   Check_Broken_VIs -> Build_VIPM_Library
 # All steps run sequentially on the SAME (self-hosted) machine with a SINGLE checkout.
